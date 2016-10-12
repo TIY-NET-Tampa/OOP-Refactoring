@@ -12,25 +12,25 @@ namespace Refactoring
         //final goal is to have a location heiracrhy
         
             // each location has a name, latitude and longitude
-       
+       public class Location
+        {
+            public string Name { get; set; }
+            public string Address { get; set; }
+            public float Latitude { get; set; }
+            public float Longitude { get; set; }
+        }
+
+
 
         static void Main(string[] args)
         {
-            var loc1Name = "TIY";
-            var loc1Address = "123 over here";
-            var loc1Lat = 25;
-            var loc1Long = 82;
 
-            var loc2Name = "TIY";
-            var loc2Address = "123 over here";
-            var loc2Lat = 25;
-            var loc2Long = 82;
-
-            var loc3Name = "TIY";
-            var loc3Address = "123 over here";
-            var loc3Lat = 25;
-            var loc3Long = 82;
-
+            var loc1 = new Location();
+            loc1.Address = "123 here";
+            loc1.Name = "TIY";
+            loc1.Longitude = 25F;
+            loc1.Latitude = 82F;
+            
             Console.ReadLine();
         }
     }
