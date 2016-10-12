@@ -29,7 +29,6 @@ namespace Refactoring
 
         static void Main(string[] args)
         {
-
             var loc1 = new Location();
             loc1.Address = "123 here";
             loc1.Name = "TIY";
