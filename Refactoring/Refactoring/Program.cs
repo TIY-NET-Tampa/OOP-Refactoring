@@ -9,33 +9,31 @@ namespace Refactoring
     class Program
     {
 
-        //final goal is to have a location heiracrhy
+        /*
+         The goal of this project it to teach about Encapstualtion,
+         abstraction and refactoring in OOP
+
+
+        We will be building a static Calculator Class that:
+        - Encapsulates a running total
+        - Encapsulates all the calculator logic
+        - Abstracts the math logic from the main app
+        - Demostrates a Singleton Pattern
         
-            // each location has a name, latitude and longitude
-       public class Location
-        {
-            public string Name { get; set; }
-            public string Address { get; set; }
-            public float Latitude { get; set; }
-            public float Longitude { get; set; }
-
-            public override string ToString()
-            {
-                return $"This location is {this.Name} at {this.Address}, at {this.Latitude},{this.Longitude}";
-            }
-        }
-
-
-
+             
+             */
+        
         static void Main(string[] args)
         {
-            var loc1 = new Location();
-            loc1.Address = "123 here";
-            loc1.Name = "TIY";
-            loc1.Longitude = 25F;
-            loc1.Latitude = 82F;
+            var a = 2;
+            var b = 3;
 
-            Console.WriteLine(loc1);
+            Console.WriteLine(Calculator.Add(a, b));
+            Console.WriteLine(Calculator.Subtract(a, b));
+            Console.WriteLine(Calculator.Multiple(a, b));
+            Console.WriteLine(Calculator.Divide(a, b));
+            Console.WriteLine("-----");
+            Console.WriteLine(Calculator.RunningTotal);
 
             Console.ReadLine();
         }
