@@ -24,6 +24,13 @@ namespace Refactoring
             _RunningTotal += rv;
             return rv;
         }
+
+        public static decimal Add(IEnumerable<decimal> nums)
+        {
+            var rv = nums.Sum();
+            _RunningTotal += rv;
+            return rv;
+        }
         public static decimal Subtract(decimal a, decimal b)
         {
             var rv = a - b;

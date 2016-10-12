@@ -14,7 +14,7 @@ namespace Refactoring
          abstraction and refactoring in OOP
 
 
-        We will be building a static Calculator Class that:
+        We will be building a non-static Calculator Class that:
         - Encapsulates a running total
         - Encapsulates all the calculator logic
         - Abstracts the math logic from the main app
