@@ -18,6 +18,11 @@ namespace Refactoring
             public string Address { get; set; }
             public float Latitude { get; set; }
             public float Longitude { get; set; }
+
+            public override string ToString()
+            {
+                return $"This location is {this.Name} at {this.Address}, at {this.Latitude},{this.Longitude}";
+            }
         }
 
 
@@ -30,7 +35,9 @@ namespace Refactoring
             loc1.Name = "TIY";
             loc1.Longitude = 25F;
             loc1.Latitude = 82F;
-            
+
+            Console.WriteLine(loc1);
+
             Console.ReadLine();
         }
     }
