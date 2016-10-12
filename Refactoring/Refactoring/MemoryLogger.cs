@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Refactoring
 {
-    class ConsoleLogger : ILogger
+    class MemoryLogger : ILogger
     {
         private List<Log> Logs { get; set; } = new List<Log>();
         private LogLevel DisplayLevel = LogLevel.Debug;
